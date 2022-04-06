@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+	char sign;
+	char integer;
+	char expsign;
+	int exp;
+	char ch;
+	
+	sign=getchar();
+	integer=getchar();
+	getchar();
+	int lenth=0;
+	while((ch=getchar())!='E'){
+		frac[lenth++]=ch;
+	}
+	expsign=getchar();
+	scanf("%d",%exp);
+	
+	if(sign=='-')
+	printf("-");
+	if(exp=0)
+	printf("%c.%s",integer,frac);
+	else if(espsign=='+')
+	{
+		if(exp>=lenth)
+		{
+			printf("%c%s",integer,frac);
+			for(int i=0;i<esp-lenth;i++)
+			putchar('0');
+		}
+		else
+		{
+			if(integer!='0')
+			printf("%c",integer);
+			for(int i=0;i<lenth;i++)
+			{
+				printf("%c",frac[i]);
+				if(i==exp-1)
+				putchar('.');
+			}
+		}
+	}
+	else if(expsign=='-')
+		{
+			printf("0.");
+			for(int i=0;i<exp-1;i++)
+			putchar('0');
+			printf("%c%s",integer,frac);
+		}
+	
+	
+}
